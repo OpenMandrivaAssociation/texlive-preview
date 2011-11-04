@@ -1,3 +1,9 @@
+# revision 17118
+# category Package
+# catalog-ctan /macros/latex/contrib/preview
+# catalog-date 2010-02-22 08:57:39 +0100
+# catalog-license gpl
+# catalog-version 11.86
 Name:		texlive-preview
 Version:	11.86
 Release:	1
@@ -56,6 +62,7 @@ translators, etc.
 %doc %{_texmfdistdir}/source/latex/preview/preview.drv
 %doc %{_texmfdistdir}/source/latex/preview/preview.dtx
 %doc %{_texmfdistdir}/source/latex/preview/preview.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -66,3 +73,5 @@ translators, etc.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
