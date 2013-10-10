@@ -1,12 +1,12 @@
-# revision 17118
+# revision 28438
 # category Package
 # catalog-ctan /macros/latex/contrib/preview
-# catalog-date 2010-02-22 08:57:39 +0100
+# catalog-date 2012-12-02 22:39:14 +0100
 # catalog-license gpl
-# catalog-version 11.86
+# catalog-version 11.87
 Name:		texlive-preview
-Version:	11.86
-Release:	2
+Version:	11.87
+Release:	1
 Summary:	Extract bits of a LaTeX source for output
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/preview
@@ -62,17 +62,3 @@ translators, etc.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 11.86-2
-+ Revision: 755065
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 11.86-1
-+ Revision: 719299
-- texlive-preview
-- texlive-preview
-- texlive-preview
-- texlive-preview
-
