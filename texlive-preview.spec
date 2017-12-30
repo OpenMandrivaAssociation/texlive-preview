@@ -5,8 +5,8 @@
 # catalog-license gpl
 # catalog-version 11.87
 Name:		texlive-preview
-Version:	11.87
-Release:	9
+Version:	11.91
+Release:	1
 Summary:	Extract bits of a LaTeX source for output
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/preview
