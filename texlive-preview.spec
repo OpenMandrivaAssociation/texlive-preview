@@ -1,19 +1,13 @@
-# revision 28438
-# category Package
-# catalog-ctan /macros/latex/contrib/preview
-# catalog-date 2012-12-02 22:39:14 +0100
-# catalog-license gpl
-# catalog-version 11.87
 Name:		texlive-preview
-Version:	11.91
-Release:	2
+Version:	62130
+Release:	1
 Summary:	Extract bits of a LaTeX source for output
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/preview
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/preview.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/preview.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/preview.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/preview.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/preview.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/preview.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ reasonably be expected to have other uses, as in html
 translators, etc.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -55,7 +49,8 @@ translators, etc.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
