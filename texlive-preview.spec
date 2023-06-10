@@ -1,6 +1,6 @@
 Name:		texlive-preview
-Version:	62130
-Release:	2
+Version:	66924
+Release:	1
 Summary:	Extract bits of a LaTeX source for output
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/preview
