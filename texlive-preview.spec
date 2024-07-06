@@ -1,5 +1,5 @@
 Name:		texlive-preview
-Version:	69470
+Version:	71662
 Release:	1
 Summary:	Extract bits of a LaTeX source for output
 Group:		Publishing
